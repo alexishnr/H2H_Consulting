@@ -45,7 +45,7 @@ class Home extends Component {
 
   writingMessage(event){
     var now = moment().format('MMMM Do YYYY, h:mm:ss a');
-    fetch('http://localhost:3000/contact-us', {
+    fetch('https://h2hbackend.herokuapp.com//contact-us', {
       method: 'POST',
       headers: {'Content-Type':'application/x-www-form-urlencoded'},
       body: 'userEmail='+this.state.email+'&message='+this.state.message+'&username='+this.state.username+'&date='+now+'&sujet='+this.state.sujet
@@ -60,12 +60,12 @@ class Home extends Component {
       date: now
     }
   )
-//   .then(() => {this.setState({
-//     username: '',
-//     email: '',
-//     message: ''
-//   })
-// })
+  .then(() => {this.setState({
+    username: '',
+    email: '',
+    message: ''
+  })
+})
 }
   render() {
 
