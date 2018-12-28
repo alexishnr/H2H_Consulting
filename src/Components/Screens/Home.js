@@ -109,7 +109,7 @@ class Home extends Component {
           <div className='aboutText'>
             <div style={{margin:70}}>
               <h3 style={{marginBottom:20}}>A PROPOS</h3>
-              <p>Nous partons du principe qu'il n'est pas facile de de développer un produit de sa pensée jusqu'à sa conception et que cela demande du temps et de nombreuses compétences qui ne sont pas accessibles à tout le monde.</p>
+              <p>Nous partons du principe qu'il n'est pas facile de développer un produit de sa pensée jusqu'à sa conception et que cela demande du temps et de nombreuses compétences qui ne sont pas accessibles à tout le monde.</p>
               <p>Notre objectif est donc de mettre à votre disposition nos compétences les plus innovantes pour vous aider à atteindre vos objectifs, ouverts sur l'international et possédant une agence à Londres et à Paris, H2H Consulting sera en mesure de vous apporter ce que vous cherchez.</p>
             </div>
           </div>
