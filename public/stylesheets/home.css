@@ -224,3 +224,7 @@ a:hover{
   justify-content:flex-start;
   align-items: center;
 }
+
+button.close{
+  display: none !important
+}
