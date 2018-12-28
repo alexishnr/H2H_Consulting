@@ -19,7 +19,8 @@ class Home extends Component {
         email:'',
         message:'',
         date: new Date('1976-04-19T12:59-0500'),
-        sujet:''
+        sujet:'',
+        error:''
       };
       this.toggle = this.toggle.bind(this);
       this.writingMessage = this.writingMessage.bind(this);
@@ -63,7 +64,8 @@ class Home extends Component {
   .then(() => {this.setState({
     username: '',
     email: '',
-    message: ''
+    message: '',
+    error:'Merci de nous avoir contacté, nous vous répondrons au plus vite !'
   })
 })
 }
@@ -124,7 +126,7 @@ class Home extends Component {
              <div id='contact'>
                <div className='contactText'>
                  <div className='contactText1'>
-                 <Form style={{marginLeft:'auto', marginRight:'auto', marginTop:50, alignItems:'center', display:'flex', flexDirection:'column'}}>
+                 <Form style={{marginLeft:'auto', marginRight:'auto', marginTop:20, alignItems:'center', display:'flex', flexDirection:'column'}}>
                     <h3 style={{fontWeight:'normal',  color:'#FFF'}}>NOUS CONTACTER</h3>
                     <FormGroup>
                       <Label for="exampleEmail">Nom</Label>
@@ -147,6 +149,7 @@ class Home extends Component {
                         </textarea>
                     </FormGroup>
                     <Button  disabled={isInvalid} color="secondary" className="btn btn-primary" style={{marginLeft:10, backgroundColor:'#f48a00', border:'none', borderRadius:2}} onClick={this.writingMessage}>Envoyer</Button>
+                    <span style={{marginTop:10, fontSize:13}}>{this.state.error}</span>
                   </Form>
                  </div>
                </div>
