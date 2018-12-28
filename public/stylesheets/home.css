@@ -29,7 +29,7 @@ h3{
   align-items: center;
   height: 100vh;
   width:100vw !important;
-  background-image: url(/images/background4.jpg);
+  background-image: url(/images/background41.jpg);
   background-size: cover;
   background-position: center center
 }
@@ -40,7 +40,7 @@ h3{
   justify-content: center;
   align-items: center;
   height: 80vh;
-  background-image: url(/images/background4.jpg);
+  background-image: url(/images/background41.jpg);
   background-size: cover;
   background-position: center center
 }
@@ -110,7 +110,7 @@ h3{
 #contact{
   width:100vw !important;
   height: 500px;
-  background-image: url(/images/picture3.jpg);
+  background-image: url(/images/picture31.jpg);
   background-size: cover;
   background-position: center center;
   display: flex;
@@ -138,7 +138,7 @@ h3{
 
 .aboutPicture{
   height: 500px;
-  background-image: url(/images/picture1.jpg);
+  background-image: url(/images/picture11.jpg);
   background-size: cover;
   background-position: center center;
   display: flex;
